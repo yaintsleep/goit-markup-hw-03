@@ -17,6 +17,7 @@ body {
   --current-page-color: #2196f3;
 }
 /*--------- HEADER --------*/
+
 .logo {
   text-decoration: none;
   font-family: 'Raleway';
@@ -33,6 +34,20 @@ body {
 
 .last-part-footer {
   color: var(--white-text-color);
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  top: 32px;
+  width: 281px;
+  margin: 32px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  width: 307px;
 }
 
 .header-nav-link {
@@ -88,10 +103,9 @@ body {
 .hero-box {
   width: 1600px;
   height: 600px;
+  top: 80px;
+  left: 0px;
   background-color: var(--dark-background-color);
-}
-
-.hero-text {
 }
 
 .hero-studio {
@@ -105,6 +119,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
+  width: 696px;
+  padding: 200px;
 }
 
 .visually-hidden {
@@ -129,14 +145,35 @@ body {
   font-size: 16px;
   line-height: calc(30 / 16);
   display: flex;
+  justify-content: center;
+  border-radius: 4px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
+  width: 216px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 692px;
+  margin-bottom: 200px;
 }
 
 .hero-btn:active {
   color: var(--button-color);
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 98px;
+  margin-top: 94px;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-bottom: 94px;
+}
+.benefit {
+  width: 270px;
 }
 
 .benefits-title {
@@ -159,6 +196,19 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   color: var(--black-text-color);
+  width: 1170px;
+  height: 386px;
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 294px;
+  margin-top: 50px;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-bottom: 94px;
 }
 
 .about-title {
@@ -168,10 +218,45 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   color: var(--black-text-color);
+  width: 366px;
+  height: 42px;
+  margin-left: 617px;
+  margin-right: 617px;
 }
 
 .team {
   background-color: var(--light-background-color);
+  width: 1600px;
+  height: 648px;
+  margin-top: 94px;
+  margin-left: 215px;
+  margin-right: 215px;
+  margin-bottom: 94px;
+}
+
+.about-title-team {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--black-text-color);
+  width: 264px;
+  height: 42px;
+  margin-left: 668px;
+  margin-right: 668px;
+  padding-top: 94px;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+  width: 1170px;
+  height: 368px;
+}
+
+.teammate {
+  width: 270px;
+  height: 368px;
 }
 
 .teammate-name {
