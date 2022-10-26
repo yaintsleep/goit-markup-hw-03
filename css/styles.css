@@ -85,6 +85,15 @@ body {
 }
 
 /* HERO */
+.hero-box {
+  width: 1600px;
+  height: 600px;
+  background-color: var(--dark-background-color);
+}
+
+.hero-text {
+}
+
 .hero-studio {
   background-color: var(--dark-background-color);
 }
