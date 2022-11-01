@@ -229,8 +229,6 @@ body {
   width: 1600px;
   height: 648px;
   margin-top: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
   margin-bottom: 94px;
 }
 
@@ -252,11 +250,14 @@ body {
   justify-content: center;
   width: 1170px;
   height: 368px;
+  margin-left: 215px;
 }
 
 .teammate {
   width: 270px;
   height: 368px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .teammate-name {
@@ -278,10 +279,23 @@ body {
 /*------- FOOTER ---------*/
 .footer {
   background-color: var(--dark-background-color);
+  width: 1600px;
+  height: 252px;
 }
 
 .footer-list {
   font-style: normal;
+  margin-left: 215px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.logo-header {
+  margin-left: 250px;
+}
+
+.logo-footer {
+  margin-left: 250px;
 }
 
 .geolocation {
@@ -289,6 +303,7 @@ body {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--white-text-color);
+  padding-bottom: 9px;
 }
 
 .footer-list-mail {
@@ -296,6 +311,7 @@ body {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 9px;
 }
 
 .footer-list-tel {
@@ -336,6 +352,21 @@ body {
   color: var(--white-text-color);
 }
 
+.hero-buttons {
+  justify-content: center;
+  display: flex;
+}
+
+.hero-button {
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  border: var(--white-text-color);
+  padding: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
 .options-title {
   font-weight: 700;
   font-size: 18px;
@@ -348,4 +379,35 @@ body {
   font-size: 16px;
   line-height: 30px;
   color: var(--description-color);
+}
+
+.options-list {
+  width: 1170px;
+  height: 1304px;
+}
+
+.first-line {
+  justify-content: space-around;
+  display: flex;
+  width: 1170px;
+  height: 404px;
+  padding: 30px;
+  padding-top: 56px;
+}
+
+.second-line {
+  justify-content: space-around;
+  display: flex;
+  width: 1170px;
+  height: 404px;
+  padding: 30px;
+}
+
+.third-line {
+  justify-content: space-around;
+  display: flex;
+  width: 1170px;
+  height: 404px;
+  padding: 30px;
+  padding-bottom: 94px;
 }
