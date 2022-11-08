@@ -37,17 +37,19 @@ body {
 }
 .nav-list {
   display: flex;
-  justify-content: space-between;
-  padding-left: 50px;
-  top: 32px;
-  width: 281px;
-  margin: 32px;
+  gap: 50px;
+}
+
+.header-nav-item {
+  padding-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-links {
   display: flex;
-  justify-content: space-between;
-  width: 307px;
+  gap: 50px;
+  margin-left: auto;
 }
 
 .header-nav-link {
@@ -56,6 +58,8 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--black-text-color);
+  padding: 32px 0;
+  display: block;
 }
 
 .current {
@@ -74,13 +78,11 @@ body {
   color: var(--hover-color);
 }
 
-.list,
-.nav-list,
-.about-list,
-.benefits-list,
-.team-list,
-.footer-list {
+.list {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
+  padding: 0;
 }
 
 .header-tel-link {
@@ -101,11 +103,9 @@ body {
 
 /* HERO */
 .hero-box {
-  width: 1600px;
-  height: 600px;
-  top: 80px;
-  left: 0px;
   background-color: var(--dark-background-color);
+  padding: 200px 0;
+  text-align: center;
 }
 
 .hero-studio {
@@ -120,7 +120,7 @@ body {
   text-transform: uppercase;
   color: var(--white-text-color);
   width: 696px;
-  padding: 200px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -151,26 +151,28 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
-  width: 216px;
-  height: 50px;
+  min-width: 216px;
+  padding: 10px 32px;
   margin-top: 30px;
-  margin-left: 692px;
-  margin-bottom: 200px;
+  border: none;
+  margin: 0 auto;
 }
 
 .hero-btn:active {
   color: var(--button-color);
 }
 
+.main-list-benefits {
+  display: flex;
+  justify-content: center;
+}
+
 .benefits-list {
   display: flex;
   justify-content: space-between;
   width: 1170px;
-  height: 98px;
-  margin-top: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
-  margin-bottom: 94px;
+  margin: 0 215px;
+  margin-top: 94px  ;
 }
 .benefit {
   width: 270px;
@@ -182,33 +184,32 @@ body {
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--black-text-color);
+  padding-bottom: 10px;
 }
 
 .benefits-text {
   font-weight: 400;
   line-height: calc(24 / 14);
   color: var(--description-color);
+  gap: 30px;
 }
 /*---------- ABOUT ----------*/
 .about {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
-  text-align: center;
   color: var(--black-text-color);
+  display: block
   width: 1170px;
-  height: 386px;
 }
 
 .about-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 1170px;
   height: 294px;
-  margin-top: 50px;
-  margin-left: 215px;
-  margin-right: 215px;
-  margin-bottom: 94px;
+  margin: auto 215px;
+  gap: 30px;
 }
 
 .about-title {
@@ -216,20 +217,18 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
-  text-align: center;
   color: var(--black-text-color);
   width: 366px;
   height: 42px;
-  margin-left: 617px;
-  margin-right: 617px;
+  margin: auto 617px;
+  padding-bottom: 50px;
 }
 
 .team {
   background-color: var(--light-background-color);
   width: 1600px;
   height: 648px;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  display: block;
 }
 
 .about-title-team {
@@ -241,9 +240,10 @@ body {
   color: var(--black-text-color);
   width: 264px;
   height: 42px;
-  margin-left: 668px;
-  margin-right: 668px;
-  padding-top: 94px;
+  margin: auto 668px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 .team-list {
   display: flex;
@@ -251,13 +251,13 @@ body {
   width: 1170px;
   height: 368px;
   margin-left: 215px;
+  gap: 15px ;
 }
 
 .teammate {
   width: 270px;
   height: 368px;
-  padding-left: 15px;
-  padding-right: 15px;
+  background-color: var(--white-text-color);
 }
 
 .teammate-name {
@@ -266,6 +266,7 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   color: var(--black-text-color);
+  padding-top: 30px;
 }
 
 .team-speciality {
@@ -274,6 +275,7 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   color: var(--description-color);
+  padding-top: 10px;
 }
 
 /*------- FOOTER ---------*/
@@ -291,11 +293,10 @@ body {
 }
 
 .logo-header {
-  margin-left: 250px;
 }
 
 .logo-footer {
-  margin-left: 250px;
+  margin-left: 215px;
 }
 
 .geolocation {
@@ -410,4 +411,50 @@ body {
   height: 404px;
   padding: 30px;
   padding-bottom: 94px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0%;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.link {
+  text-decoration: none;
+  // color: inherit;
+}
+
+nav {
+  margin-left: 32px;
 }
