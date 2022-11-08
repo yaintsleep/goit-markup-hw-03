@@ -373,6 +373,11 @@ body {
   font-size: 18px;
   line-height: 36px;
   color: var(--black-text-color);
+  gap: 4px  ;
+  padding-top: 20px;
+  display: flex;
+  justify-content: left;
+  padding-left: 24px;
 }
 
 .options-text {
@@ -380,11 +385,18 @@ body {
   font-size: 16px;
   line-height: 30px;
   color: var(--description-color);
+  display: flex;
+  justify-content: left;
+  padding-left: 24px;
 }
 
 .options-list {
   width: 1170px;
   height: 1304px;
+}
+
+.options-list-item {
+  border: 1px solid #EEEEEE
 }
 
 .first-line {
@@ -410,7 +422,7 @@ body {
   width: 1170px;
   height: 404px;
   padding: 30px;
-  padding-bottom: 94px;
+  margin-bottom: 94px;
 }
 
 h1,
