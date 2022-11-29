@@ -419,12 +419,15 @@ nav {
 
 .first-line {
   display: flex;
+  width: 1170px;
 }
 
 .second-line {
   display: flex;
+  width: 1170px;
 }
 
 .third-line {
   display: flex;
+  width: 1170px;
 }
