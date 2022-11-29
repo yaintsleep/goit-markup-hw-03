@@ -22,6 +22,7 @@ img {
 }
 address {
   font-style: normal;
+  margin-top: 20px;
 }
 
 button {
@@ -214,6 +215,7 @@ nav {
 .benefits-list {
   display: flex;
   gap: 30px;
+  box-sizing: border-box;
 }
 .benefit {
   width: 270px;
@@ -270,20 +272,22 @@ nav {
 .team-list {
   display: flex;
   gap: 30px;
-  height: 368px;
 }
 
 .teammate {
   background-color: var(--white-text-color);
 }
 
+.teammate-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .teammate-name {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   color: var(--black-text-color);
-  padding-top: 30px;
 }
 
 .team-speciality {
@@ -292,18 +296,19 @@ nav {
   line-height: calc(19 / 16);
   text-align: center;
   color: var(--description-color);
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /*------- FOOTER ---------*/
 .footer {
   background-color: var(--dark-background-color);
-  height: 252px;
+  padding: 60px 0;
 }
-
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-list {
   font-style: normal;
-  margin-top: 20px;
 }
 
 .logo-header {
@@ -370,17 +375,14 @@ nav {
 .hero-buttons {
   justify-content: center;
   display: flex;
-  margin-top: 94px;
+  gap: 8px;
+  margin-bottom: 50px;
 }
 
 .hero-button {
-  margin-left: 4px;
-  margin-right: 4px;
   border-radius: 4px;
   border: var(--white-text-color);
-  padding: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px 22px;
 }
 
 .options-title {
@@ -406,8 +408,9 @@ nav {
 }
 
 .options-list {
-  width: 1170px;
-  height: 1304px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .options-list-item {
@@ -416,22 +419,12 @@ nav {
 
 .first-line {
   display: flex;
-  height: 404px;
-  margin-top: 56px;
-  gap: 30px;
-  padding-bottom: 30px;
 }
 
 .second-line {
   display: flex;
-  height: 404px;
-  gap: 30px;
-  padding-bottom: 30px;
 }
 
 .third-line {
   display: flex;
-  height: 404px;
-  margin-bottom: 94px;
-  gap: 30px;
 }
