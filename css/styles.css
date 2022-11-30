@@ -388,23 +388,15 @@ nav {
 .options-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: calc(36 / 18);
   color: var(--black-text-color);
-  gap: 4px;
-  padding-top: 20px;
-  display: flex;
-  justify-content: left;
-  padding-left: 24px;
+  margin-bottom: 4px;
 }
 
 .options-text {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: calc(30 / 16);
   color: var(--description-color);
-  display: flex;
-  justify-content: left;
-  padding-left: 24px;
 }
 
 .options-list {
@@ -413,8 +405,7 @@ nav {
   gap: 30px;
 }
 .options-box {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 .options-list-item {
